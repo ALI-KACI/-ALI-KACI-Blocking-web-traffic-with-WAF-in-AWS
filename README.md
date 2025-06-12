@@ -22,7 +22,19 @@ Implement AWS WAF to control inbound/outbound traffic to web servers via an appl
 7. In <b>WAF & Shield</b> service Create <b>IP Sets</b> with IP 119.13.69.68/32
 8. Create <b>Web ACL</b>
    - Attach the load balancer
-   - block the IP sets created and added to the rule.
+   - block the IP sets created and added to the rule.\
+     <b>json</b>
+{\
+  "Name": "BlockMaliciousIPs",\
+  "Priority": 1,\
+  "Action": { "Block": {} },\
+  "Statement": { \
+    "IPSetReferenceStatement": { \
+      "ARN": "arn:aws:wafv2:us-east-1:123456789012:ipset/BlockedIPs" \
+    }\
+  }\
+}
+
 9. Test
     - By copy the DNS from Load balancer we receive <b>403 Forbidden error</b>
     - Means that WAF blocked the connectivity from Load balancer
