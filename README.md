@@ -4,8 +4,6 @@ Implement AWS WAF to control inbound/outbound traffic to web servers via an appl
 
 ### Step-by-Step Implementation
 
-# Launch two EC2 instances (WebServerA & WebServerB)
-
 1. Create <b>Security Groupe</b> for the <b>Load Balancer</b>
 2. Launch two EC2 Instances <b>(WebServerA)</b>-<b>(webServerB)</b>
    - instance-type t2.micro
