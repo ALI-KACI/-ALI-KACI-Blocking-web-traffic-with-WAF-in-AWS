@@ -20,7 +20,7 @@ Implement AWS WAF to control inbound/outbound traffic to web servers via an appl
 7. In <b>WAF & Shield</b> service Create <b>IP Sets</b> with IP 119.13.69.68/32
 8. Create <b>Web ACL</b>
    - Attach the load balancer
-   - block the IP sets created and added to the rule.\
+   - block the IP set created and added to the rule.\
      <b>json</b>
 {\
   "Name": "BlockMaliciousIPs",\
