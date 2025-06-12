@@ -1,4 +1,4 @@
-# -ALI-KACI-Blocking-web-traffic-with-WAF-in-AWS
+# -Blocking-web-traffic-with-WAF-in-AWS
 ## Purpose of the Hands on
 Implement AWS WAF to control inbound/outbound traffic to web servers via an application Load Balancer(ALB)
 
