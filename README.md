@@ -3,8 +3,6 @@
 Implement AWS WAF to control inbound/outbound traffic to web servers via an application Load Balancer(ALB)
 
 ### Step-by-Step Implementation
-### Methods
-
 
 # Launch two EC2 instances (WebServerA & WebServerB)
 
