@@ -29,6 +29,7 @@ Use WAF & Shield to block and allow incoming and outgoing resquests from web ser
  
     
 
-> *Lab originally from: [Whizlabs - Blocking web traffic with WAF in AWS]([(https://www.whizlabs.com/labs/blocking-web-traffic-with-waf-in-aws/)])*
+> *Lab originally from: [Whizlabs - Blocking web traffic with WAF in AWS](https://www.whizlabs.com/labs/blocking-web-traffic-with-waf-in-aws/)*
+
 
 
