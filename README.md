@@ -1,15 +1,21 @@
 # -ALI-KACI-Blocking-web-traffic-with-WAF-in-AWS
 ## Purpose of the Hands on
-Use WAF & Shield to block and allow incoming and outgoing resquests from web servers.
+Implement AWS WAF to control inbound/outbound traffic to web servers via an application Load Balancer(ALB)
+
+### Step-by-Step Implementation
 ### Methods
 
+
+# Launch two EC2 instances (WebServerA & WebServerB)
+
 1. Create <b>Security Groupe</b> for the <b>Load Balancer</b>
-2. Create two Instances <b>(WebServerA)</b>-<b>(webServerB)</b>
+2. Launch two EC2 Instances <b>(WebServerA)</b>-<b>(webServerB)</b>
+   - instance-type t2.micro
    - Keypair.pem
    - auto-assign public IPV4 address
-   - name of Security groupe web: <b>webserver-SG</b>
+   - Security groupe web: <b>webserver-SG</b>
    - inbound rule: SSH, HTTP source Loadbalancer
-   - Copy an HTML script by an Apache HTTPD web server in user data section
+   - user-data file://apache_install.sh
 4. Create a Target groupe.
 5. Create <b>Application Load Balancer</b>
 6. Test the Load Balancer by copy the <b>DNS</b> name and past it to the browser, the Load is shared between the two web servers via the application Load Balancer
