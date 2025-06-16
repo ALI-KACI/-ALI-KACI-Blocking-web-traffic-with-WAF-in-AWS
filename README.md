@@ -1,6 +1,8 @@
 # -Blocking-web-traffic-with-WAF-in-AWS
 ## Purpose of the Hands on
 Implement AWS WAF to control inbound/outbound traffic to web servers via an application Load Balancer(ALB)
+## Architecture
+![Block web traffic with WAF](https://github.com/user-attachments/assets/551d9ddd-2cf7-42aa-b53a-e2fc3bdb2f84)
 
 ### Step-by-Step Implementation
 
